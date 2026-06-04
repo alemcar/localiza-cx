@@ -50,7 +50,3 @@ A solução adotada foi manter o navegador Chrome real com o script Playwright S
 | `3_dashboard.py` | Dashboard interativo em Streamlit |
 | `analise_sql.ipynb` | Análise complementar em SQL |
 
-## Autor
-
-[Seu nome]
-[Link do LinkedIn]

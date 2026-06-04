@@ -3,6 +3,10 @@
 Projeto de portfólio que coleta, processa e analisa reclamações públicas da Localiza
 no Reclame Aqui para demonstrar habilidades em coleta de dados, SQL, NLP e visualização.
 
+## Dashboard ao vivo
+
+[Acessar dashboard](https://localiza-cx-teste.streamlit.app/)
+
 ## Stack
 
 Python, Playwright, Pandas, SQL (SQLite), Streamlit e Plotly.

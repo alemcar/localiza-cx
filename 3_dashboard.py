@@ -44,6 +44,14 @@ st.markdown("""
         div[data-testid="stTooltipContent"] {
             color: #7DDF20 !important;
         }
+        section[data-testid="stSidebar"] h1,
+        section[data-testid="stSidebar"] h2,
+        section[data-testid="stSidebar"] h3 {
+            color: #05662C !important;
+        }
+        section[data-testid="stSidebar"] label {
+            color: #7DDF20 !important;
+        }
     </style>
 """, unsafe_allow_html=True)
 
@@ -128,7 +136,7 @@ with c2:
         color="estado",
         text="quantidade",
         labels={"quantidade": "Qtd", "estado": ""},
-        color_discrete_sequence=['#ff8026','#f7792a','#f37025','#ef6620','#ec5a1b','#e85016','#e44310','#e1340a','#dd2304','#d90000'],
+        color_discrete_sequence=['#d90000','#dd2304','#e1340a','#e44310','#e85016','#ec5a1b','#ef6620','#f37025','#f7792a','#ff8026'],
     )
     fig.update_traces(textposition="outside", texttemplate="<b>%{text}</b>", textfont={"color": "black"})
     fig.update_layout(showlegend=False)
@@ -151,7 +159,7 @@ fig = px.bar(
     color="cidade",
     text="quantidade",
     labels={"quantidade": "Qtd", "cidade": ""},
-    color_discrete_sequence=['#ff8026','#f7792a','#f37025','#ef6620','#ec5a1b','#e85016','#e44310','#e1340a','#dd2304','#d90000'],
+    color_discrete_sequence=['#d90000','#dd2304','#e1340a','#e44310','#e85016','#ec5a1b','#ef6620','#f37025','#f7792a','#ff8026'],
 )
 fig.update_traces(textposition="outside", texttemplate="<b>%{text}</b>", textfont={"color": "black"})
 fig.update_layout(showlegend=False)
@@ -214,9 +222,8 @@ with c4:
             .round(1)
             .reset_index()
             .rename(columns={"nota_cliente": "nota_media"})
-            .sort_values("nota_media", ascending=True)   # seleciona os 10 piores
+            .sort_values("nota_media", ascending=True)
             .head(10)
-            .sort_values("nota_media", ascending=False)  # exibe do maior para o menor no topo
         )
         fig = px.bar(
             nota_estado,
@@ -290,7 +297,7 @@ if len(df_bh) > 0:
             color="categoria",
             text="nota_media",
             labels={"nota_media": "Nota média", "categoria": ""},
-            color_discrete_sequence=['#d90000','#de2906','#e33e0e','#e84d15','#ec5d1c','#f16b23','#f67728','#ff8026'],
+            color_discrete_sequence=['#ff8026','#f67728','#f16b23','#ec5d1c','#e84d15','#e33e0e','#de2906','#d90000'],
         )
         fig.update_traces(textposition="outside", texttemplate="<b>%{text}</b>", textfont={"color": "black"})
         fig.add_hline(

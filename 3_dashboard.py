@@ -117,7 +117,7 @@ with c2:
         .head(10)
         .reset_index()
         .rename(columns={"count": "quantidade"})
-        .sort_values("quantidade", ascending=True)
+        .sort_values("quantidade", ascending=False)
     )
     fig = px.bar(
         top_estados,
@@ -140,7 +140,7 @@ top_cidades = (
     .head(10)
     .reset_index()
     .rename(columns={"count": "quantidade"})
-    .sort_values("quantidade", ascending=True)
+    .sort_values("quantidade", ascending=False)
 )
 fig = px.bar(
     top_cidades,
@@ -214,8 +214,9 @@ with c4:
             .round(1)
             .reset_index()
             .rename(columns={"nota_cliente": "nota_media"})
-            .sort_values("nota_media", ascending=True)
+            .sort_values("nota_media", ascending=True)   # seleciona os 10 piores
             .head(10)
+            .sort_values("nota_media", ascending=False)  # exibe do maior para o menor no topo
         )
         fig = px.bar(
             nota_estado,

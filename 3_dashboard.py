@@ -73,7 +73,7 @@ pct_resolucao = (resolvidas / total * 100) if total > 0 else 0
 
 col1.metric("Total de reclamações", f"{total:,}")
 col2.metric("Nota média do cliente", nota_str)
-col3.metric("Taxa de resolução", f"{pct_resolucao:.1f}%",
+col3.metric("Taxa de resolução positiva", f"{pct_resolucao:.1f}%",
             help="% de reclamações com status RESOLVIDO (avaliadas positivamente pelo cliente)")
 
 st.divider()

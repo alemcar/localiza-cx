@@ -1,0 +1,16 @@
+dados/reclamacoes_brutas.csv
+dados/reclamacoes_brutas_backup.csv
+__pycache__/
+*.pyc
+.DS_Store
+.env
+get-pip.py
+diagnostico.py
+diagnostico.html
+inspecionar_html.py
+mapear_api.py
+api_listagem.json
+api_individual.json
+testar_camoufox.py
+.ipynb_checkpoints/
+pagina_individual.html

@@ -1,0 +1,7 @@
+pandas
+streamlit
+plotly
+playwright
+playwright-stealth
+openpyxl
+jupyter

@@ -41,6 +41,9 @@ st.markdown("""
         h1, h2, h3 {
             color: #7DDF20 !important;
         }
+        div[data-testid="stTooltipContent"] {
+            color: #7DDF20 !important;
+        }
     </style>
 """, unsafe_allow_html=True)
 

@@ -1,4 +1,4 @@
-# Análise de CX — Localiza no Reclame Aqui
+# Análise de Dados com aplicação a CX — Localiza no Reclame Aqui
 
 Projeto de portfólio que coleta, processa e analisa reclamações públicas da Localiza
 no Reclame Aqui para demonstrar habilidades em coleta de dados, SQL, NLP e visualização.

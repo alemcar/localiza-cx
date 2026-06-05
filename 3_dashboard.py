@@ -275,7 +275,7 @@ if len(df_bh) > 0:
         color_discrete_sequence=['#d90000','#de2906','#e33e0e','#e84d15','#ec5d1c','#f16b23','#f67728','#ff8026'],
     )
     fig.update_traces(textposition="outside", texttemplate="<b>%{text}</b>", textfont={"color": "black"})
-    fig.update_layout(showlegend=False, xaxis_tickangle=-30, yaxis_visible=False)
+    fig.update_layout(showlegend=False, xaxis_tickangle=0, yaxis_visible=False)
     st.plotly_chart(fig, use_container_width=True)
 
     df_bh_nota = df_bh[df_bh["nota_cliente"].notna()]
@@ -308,7 +308,7 @@ if len(df_bh) > 0:
             annotation_text=f"Média BH: {media_bh}",
             annotation_position="right",
         )
-        fig.update_layout(showlegend=False, xaxis_tickangle=-30, yaxis_visible=False, margin=dict(r=120))
+        fig.update_layout(showlegend=False, xaxis_tickangle=0, yaxis_visible=False, margin=dict(r=120))
         st.plotly_chart(fig, use_container_width=True)
 else:
     st.info("Nenhuma reclamação encontrada para Belo Horizonte com os filtros selecionados.")

@@ -43,7 +43,7 @@ A fase de listagem das reclamações (navegação entre páginas) funcionou sem 
 
 Foram testadas alternativas como o Camoufox (Firefox modificado para parecer um usuário real) e a intercepção das chamadas de API internas do site. O Camoufox apresentou incompatibilidade com a versão do Node.js instalada. A análise das chamadas de rede revelou que os dados das reclamações são renderizados no servidor e não expostos via API, o que inviabilizou essa abordagem.
 
-A solução adotada foi manter o navegador Chrome real com o script Playwright Stealth, aumentar os intervalos entre requisições e implementar pausas automáticas quando a verificação de bot era detectada. Com isso, foi possível coletar aproximadamente 500 reclamações por sessão — um volume representativo para análise, mas inferior ao total disponível no site.
+A solução adotada foi manter o navegador Chrome real com o script Playwright Stealth, aumentar os intervalos entre requisições e implementar pausas automáticas quando a verificação de bot era detectada. Com isso, foi possível coletar 488 reclamações por sessão, um volume representativo para análise, mas inferior ao total disponível no site.
 
 ## Arquivos
 

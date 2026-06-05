@@ -57,7 +57,7 @@ st.markdown("""
 
 df = carregar_dados()
 
-st.title("Análise de CX — Localiza no Reclame Aqui")
+st.title("Análise de dados com aplicação a CX - Localiza no Reclame Aqui")
 st.caption(f"Total de registros: {len(df):,}  |  Fonte: Reclame Aqui")
 
 st.sidebar.header("Filtros")
